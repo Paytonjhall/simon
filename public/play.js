@@ -158,7 +158,7 @@ class Game {
         if (scores.length > 10) {
             scores.length = 10;
         }
-
+        localStorage.setItem('scores', JSON.stringify(scores));
         return scores;
     }
 }
